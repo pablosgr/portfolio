@@ -1,0 +1,59 @@
+/*----GENERAL STYLES----*/
+
+:root{
+    --lightBackground: rgb(243, 234, 210);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 1px solid rgb(218, 114, 114);
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background-color: var(--lightBackground);
+}
+
+/*----PAGE HEAD----*/
+
+.header{
+    height: 100px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar{
+    font-size: 1.4em;
+    width: 100vw;
+    padding: 0 120px 0px 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.list-right, .list-left{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+}
+
+/*----PAGE BODY----*/
+
+main{
+    margin: 0 100px 0 100px;
+}
+
+.title{
+    margin: 150px 150px 0 150px;
+    font-size: 4.5em;
+}
+
+.title h2{
+    padding-left: 350px;
+    line-height: 80%;
+}
