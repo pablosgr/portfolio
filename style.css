@@ -1,13 +1,15 @@
-/*----GENERAL STYLES----*/
+/*----------GENERAL STYLES----------*/
 
 :root{
     --lightBackground: rgb(243, 234, 210);
+    --textFont: Manrope;
+    --titleFont: PT Sans Narrow;
 }
 
 *{
     margin: 0;
     padding: 0;
-    border: 1px solid rgb(218, 114, 114);
+    /* border: 1px solid rgb(218, 114, 114); */
     box-sizing: border-box;
 }
 
@@ -16,7 +18,7 @@ body{
     background-color: var(--lightBackground);
 }
 
-/*----PAGE HEAD----*/
+/*----------PAGE HEAD----------*/
 
 .header{
     height: 100px;
@@ -26,9 +28,9 @@ body{
 }
 
 .navbar{
-    font-size: 1.4em;
+    font-size: 1.5em;
     width: 100vw;
-    padding: 0 120px 0px 120px;
+    padding: 0 6% 0px 6%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -40,20 +42,57 @@ body{
     display: flex;
     flex-direction: row;
     gap: 100px;
+    font-family: var(--titleFont);
 }
 
-/*----PAGE BODY----*/
+/*----------PAGE BODY----------*/
 
 main{
     margin: 0 100px 0 100px;
+    height: 100vh;
+    padding-top: 200px;
+    display: flex;
+    flex-direction: column;
 }
 
-.title{
-    margin: 150px 150px 0 150px;
-    font-size: 4.5em;
+.title-container{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 80%;
+    margin-bottom: 200px;
+    font-size: 5em;
+    font-family: var(--titleFont);
 }
 
-.title h2{
-    padding-left: 350px;
-    line-height: 80%;
+.title-1, .title-2{
+    transform: scale(1, 1.1); /* Escala 1 en ancho (X) y 1.5 en alto (Y) */
+    line-height: 68%;
+}
+
+
+.title-1{
+    width: 70%;
+    align-self: flex-start;
+    margin-bottom: 20px;
+}
+
+.title-2{
+    width: 70%;
+    align-self: flex-end;
+    color: transparent; /* Hace que el texto no tenga relleno */
+    -webkit-text-stroke: 1.5px black; /* Borde del texto */
+}
+
+/*-icon-*/
+
+.arrow-down{ /*span de google icons*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.arrow-down-icon{
+    font-size: 4.5em !important;
 }
