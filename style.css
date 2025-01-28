@@ -14,8 +14,9 @@
 }
 
 body{
-    height: 100vh;
+    height: 200vh;
     background-color: var(--lightBackground);
+    position: relative;
 }
 
 /*----------PAGE HEAD----------*/
@@ -23,14 +24,39 @@ body{
 .header{
     height: 100px;
     display: grid;
-    justify-content: center;
     align-items: center;
+    position: sticky;
+    top: 0; /*lo mantengo en el top sin position:fixed*/
+    background-color: var(--lightBackground);
+    z-index: 12;
+}
+
+.load-bar{
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    background-color: black;
+    width: 0;
+    animation: progressGrow auto linear;
+    animation-timeline: scroll(root block);
+}
+
+@keyframes progressGrow{
+    0%{
+        width: 0%;
+    }
+    30%{
+        width: 100%;
+    }
+    100%{
+        width: 100%;
+    }
 }
 
 .navbar{
     font-size: 1.5em;
-    width: 100vw;
-    padding: 0 6% 0px 6%;
+    width: 100%;
+    padding: 0 10% 0px 10%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -49,8 +75,8 @@ body{
 
 main{
     margin: 0 100px 0 100px;
-    height: 100vh;
-    padding-top: 200px;
+    min-height: 200vh;
+    padding-top: 230px;
     display: flex;
     flex-direction: column;
 }
@@ -86,13 +112,16 @@ main{
 
 /*-icon-*/
 
-.arrow-down{ /*span de google icons*/
+.arrow-down {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100px;
+    position: sticky; /* Sticky dentro del contenedor */
+    top: 800px;     /* Se fija a 10px del borde inferior del contenedor */
+    z-index: 10;      /* Asegúrate de que esté por encima de otros elementos */
 }
 
-.arrow-down-icon{
+.arrow-down-icon {
     font-size: 4.5em !important;
 }
