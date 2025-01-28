@@ -14,15 +14,22 @@
 }
 
 body{
-    height: 200vh;
     background-color: var(--lightBackground);
     position: relative;
+}
+
+main{
+    margin: 0 100px 0 100px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
 }
 
 /*----------PAGE HEAD----------*/
 
 .header{
     height: 100px;
+    margin-bottom: 140px;
     display: grid;
     align-items: center;
     position: sticky;
@@ -45,7 +52,7 @@ body{
     0%{
         width: 0%;
     }
-    30%{
+    17%{
         width: 100%;
     }
     100%{
@@ -73,20 +80,74 @@ body{
 
 /*----------PAGE BODY----------*/
 
-main{
-    margin: 0 100px 0 100px;
-    min-height: 200vh;
-    padding-top: 230px;
+.container{
+    /* border: 1px solid rgb(218, 114, 114); */
+    margin-bottom: 400px;
+    width: 80%;
+    align-self: center;
     display: flex;
     flex-direction: column;
 }
 
+/*----------SECTIONS----------*/
+
+.section-title{
+    font-family: var(--titleFont);
+    font-size: 6.5em;
+}
+
+.section-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px 20px 20px 0;
+}
+
+.section-text{
+    width: 60%;
+    font-family: var(--textFont);
+    font-size: 2em;
+    text-align: justify;
+}
+
+.section-img {
+    flex-shrink: 0;
+    /* flex: 2; */
+    align-self: center;
+    margin-left: 50px;
+    object-fit: cover;
+    max-width: 400px;
+    min-width: 300px;
+    width: 100%;
+    height: auto; /* mantiene la relación de aspecto */
+    border-radius: 5px;
+    box-shadow: 0 0 12px rgba(65, 65, 65, 0.4);
+}
+
+/*-arrow-icon-*/
+
+.arrow-down {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    position: sticky; /* Sticky dentro del contenedor */
+    top: 800px;     /* Se fija a 10px del borde inferior del contenedor */
+    z-index: 10;      /* Asegúrate de que esté por encima de otros elementos */
+}
+
+.arrow-down-icon {
+    font-size: 4.5em !important;
+}
+
+/*-title-*/
+
 .title-container{
     display: flex;
     flex-direction: column;
-    align-self: center;
-    width: 80%;
-    margin-bottom: 200px;
+    /* align-self: center;
+    width: 80%; */
     font-size: 5em;
     font-family: var(--titleFont);
 }
@@ -110,18 +171,18 @@ main{
     -webkit-text-stroke: 1.5px black; /* Borde del texto */
 }
 
-/*-icon-*/
+/*-about-*/
 
-.arrow-down {
+
+
+/*----------FOOTER----------*/
+
+footer{
+    background-color: black;
+    color: white;
+    margin-top: auto; /*para mantenerlo abajo con el flex:1 del main*/
+    min-height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100px;
-    position: sticky; /* Sticky dentro del contenedor */
-    top: 800px;     /* Se fija a 10px del borde inferior del contenedor */
-    z-index: 10;      /* Asegúrate de que esté por encima de otros elementos */
-}
-
-.arrow-down-icon {
-    font-size: 4.5em !important;
 }
