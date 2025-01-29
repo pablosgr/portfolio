@@ -63,7 +63,7 @@ main{
 }
 
 .navbar{
-    font-size: 1.5em;
+    font-size: 1.6em;
     width: 100%;
     padding: 0 10% 0px 10%;
     display: flex;
@@ -182,17 +182,12 @@ main{
 
 /*-skills cards-*/
 
-.skills-content {
-    display: flex;
-    justify-content: flex-start;
-}
-
 .skills-list {
     width: 100%;
     list-style: none;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
     gap: 50px;
     flex-wrap: wrap;
 }
@@ -243,9 +238,50 @@ main{
 
 /*-experience timelines-*/
 
-.right-side, .left-side{
+.experience-content{
+    gap: 70px;
+    justify-content: space-evenly;
+}
+
+.timeline{
     display: flex;
-    flex-direction: ;
+    flex-direction: row;
+    gap: 50px;
+    max-width: 500px;
+}
+
+.timeline-line{
+    width: 6px;
+    height: 550px;
+    background-color: var(--lightBlack);
+}
+
+.timeline-list{
+    list-style: none;
+    font-family: var(--textFont);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 50px;
+}
+
+.timeline-list li:first-child{
+    font-size: 3.5em;
+    font-family: var(--titleFont);
+}
+
+.timeline-item{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.timeline-item h4{
+    font-size: 1.3em;
+}
+
+.timeline-item time, .timeline-item p{
+    font-size: 1.2em;
 }
 
 /*----------FOOTER----------*/
