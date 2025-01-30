@@ -54,7 +54,7 @@ main{
     0%{
         width: 0%;
     }
-    12%{
+    8%{
         width: 100%;
     }
     100%{
@@ -105,7 +105,6 @@ main{
 }
 
 .section-maintext{
-    width: 60%;
     font-family: var(--textFont);
     font-size: 1.8em;
     text-align: justify;
@@ -144,6 +143,10 @@ main{
 }
 
 /*-main title-*/
+
+.present-text{
+    width: 60%;
+}
 
 .title-container{
     display: flex;
@@ -297,43 +300,100 @@ main{
 }
 
 .project-card{
+    width: 300px;
+    height: 460px;
+    border: 2px solid var(--lightBlack);
+    border-radius: 5px;
+    font-family: var(--textFont);
+    transition: .3s ease;
+}
+
+.project-card a{
+    padding: 30px;
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    width: 300px;
-    height: 450px;
-    border: 2px solid var(--lightBlack);
-    border-radius: 5px;
-    padding: 30px;
-    font-family: var(--textFont);
-    transition: .2s ease;
+    text-decoration: none;
+    color: inherit;
 }
 
 .project-card:hover{
-    border-bottom-right-radius: 45px;
+    border-bottom-right-radius: 70px;
+    cursor: pointer;
+    box-shadow: 4px 4px 10px rgba(65, 65, 65, 0.4);
 }
 
-.project-card h4{
+.project-card a h4{
     font-family: var(--titleFont);
     font-size: 1.7em;
     margin-bottom: 20px;
 }
 
-.project-card img{
-    width: 225px;
+.project-card a img{
+    width: 235px;
     align-self: center;
     margin-bottom: 20px;
 }
 
-.project-card p{
+.project-card a p{
     text-align: justify;
+    font-size: 1.1em;
 }
 
-.project-card a{
-    font-weight: 700;
-    margin-top: auto;
-    align-self: flex-end;
-    text-decoration: none;
+/*-contact-*/
+
+.contact-content{
+    flex-direction: column;
+}
+
+.contact-text{
+    text-align: center;
+}
+
+.contact-list{
+    /* position: relative; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 60px;
+    height: 250px;
+    padding: 20px 50px 0px 50px;
+    border-bottom: 2px solid var(--lightBlack);
+}
+
+.contact-element{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+}
+
+.contact-element i{
+    font-size: 5em;
+}
+
+.contact-details{
+    font-size: .9em;
+    padding: 50px 50px 0px 50px;
+}
+
+/* .contact-info{
+    position: absolute;
+    transition: 1s ease;
+} */
+
+/* .phone:hover ~ .contact-info{
+    opacity: 0;
+    transform: translateY(180px);
+} */
+
+.container-last{
+    margin-bottom: 250px;
 }
 
 /*----------FOOTER----------*/
@@ -341,7 +401,7 @@ main{
 footer{
     background-color: var(--lightBlack);
     font-family: var(--textFont);
-    color: white;
+    color: rgba(255, 255, 255, 0.651);
     margin-top: auto; /*para mantenerlo abajo con el flex:1 del main*/
     min-height: 80px;
     display: flex;
