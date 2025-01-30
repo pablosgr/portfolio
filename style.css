@@ -182,7 +182,7 @@ main{
 
 /*-skills cards-*/
 
-.skills-list {
+.skills-list{
     width: 100%;
     list-style: none;
     display: flex;
@@ -192,13 +192,13 @@ main{
     flex-wrap: wrap;
 }
 
-.skill-card {
+.skill-card{
     width: 170px;
     height: 170px;
     perspective: 1000px; /* Profundidad para efecto 3D */
 }
 
-.card-inner {
+.card-inner{
     width: 100%;
     height: 100%;
     position: relative;
@@ -206,12 +206,12 @@ main{
     transition: transform 0.7s;
 }
 
-.skill-card:hover .card-inner {
+.skill-card:hover .card-inner{
     transform: rotateY(180deg);
 }
 
 .card-front,
-.card-back {
+.card-back{
     width: 100%;
     height: 100%;
     position: absolute;
@@ -225,11 +225,11 @@ main{
     border-radius: 5px;
 }
 
-.card-front i {
+.card-front i{
     font-size: 5.7em;
 }
 
-.card-back {
+.card-back{
     font-family: var(--textFont);
     font-size: 1.5em;
     transform: rotateY(180deg);
@@ -282,6 +282,58 @@ main{
 
 .timeline-item time, .timeline-item p{
     font-size: 1.2em;
+}
+
+/*-projects-*/
+
+.projects-list{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.project-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 300px;
+    height: 450px;
+    border: 2px solid var(--lightBlack);
+    border-radius: 5px;
+    padding: 30px;
+    font-family: var(--textFont);
+    transition: .2s ease;
+}
+
+.project-card:hover{
+    border-bottom-right-radius: 45px;
+}
+
+.project-card h4{
+    font-family: var(--titleFont);
+    font-size: 1.7em;
+    margin-bottom: 20px;
+}
+
+.project-card img{
+    width: 225px;
+    align-self: center;
+    margin-bottom: 20px;
+}
+
+.project-card p{
+    text-align: justify;
+}
+
+.project-card a{
+    font-weight: 700;
+    margin-top: auto;
+    align-self: flex-end;
+    text-decoration: none;
 }
 
 /*----------FOOTER----------*/

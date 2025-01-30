@@ -16,12 +16,13 @@
         <nav class="navbar">
             <ul class="list-left">
                 <li>About Me</li>
+                <li>Experience</li>
                 <li>Skills</li>
             </ul>
             <ul class="list-right">
-                <li>Experience</li>
                 <li>Projects</li>
                 <li>Contact</li>
+                <li>EN | ES</li>
             </ul>
         </nav>
         <span class="load-bar"></span>
@@ -40,7 +41,7 @@
 
         <section class="container">
             <h2 class="section-title">About Me</h2>
-            <div class="section-content about-content">
+            <section class="section-content about-content">
                 <p class="section-maintext">
                     I'm Pablo Saavedra, former Art Teacher, Fullstack Web Developer with some 
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui consequatur voluptate provident modi
@@ -48,14 +49,57 @@
                     veniam vitae quisquam!
                 </p>
                 <img src="https://i.pinimg.com/474x/98/51/1e/98511ee98a1930b8938e42caf0904d2d.jpg" alt="imagen personal" class="section-img">
-            </div>
+            </section>
+        </section>
+
+        <section class="container">
+            <h2 class="section-title">Experience</h2>
+            <section class="section-content experience-content">
+                
+                <article class="timeline left-side">
+                    <span class="timeline-line timeline-left"></span>
+                    <ul class="timeline-list">
+                        <li class="timeline-item">
+                            <h3>Education</h3>
+                        </li>
+                        <li class="timeline-item">
+                            <h4>Degree in Web Applications Development</h4>
+                            <time>2023-2025</time>
+                            <p>Atlántida CIDEP</p>
+                        </li>
+                        <li class="timeline-item">
+                            <h4>Master in Secondary Education</h4>
+                            <time>2020-2021</time>
+                            <p>University of Almería</p>
+                        </li>
+                        <li class="timeline-item">
+                            <h4>Degree in Fine Arts (Mention in Animation & Design)</h4>
+                            <time>2014-2018</time>
+                            <p>University of Granada</p>
+                        </li>
+                    </ul>
+                </article>
+        
+                <article class="timeline right-side">
+                    <span class="timeline-line timeline-right"></span>
+                    <ul class="timeline-list">
+                        <li class="timeline-item">
+                            <h3>Work Experience</h3>
+                        </li>
+                        <li class="timeline-item">
+                            <h4>Art Teacher (Secondary Education) & Robotics Camp Monitor</h4>
+                            <time>2022-2023</time>
+                            <p>Ágora Granada College</p>
+                        </li>
+                    </ul>
+                </article>
+        
+            </section>
         </section>
 
         <section class="container">
             <h2 class="section-title">Skills</h2>
-            <div class="section-content skills-content">
-                
-                <section class="skills-category">
+            <section class="section-content skills-content">
                     <ul class="skills-list">
                         <li class="skill-card">
                             <div class="card-inner">
@@ -119,69 +163,50 @@
                         </li>
                         <li class="skill-card">
                             <div class="card-inner">
-                                <div class="card-front"><i class="material-symbols-outlined" aria-label="Teamwork">diversity_3</i></div>
+                                <div class="card-front"><i class="material-symbols-outlined">diversity_3</i></div>
                                 <div class="card-back"><span>Teamwork</span></div>
                             </div>
                         </li>
                         <li class="skill-card">
                             <div class="card-inner">
-                                <div class="card-front"><i class="material-symbols-outlined" aria-label="Proactivity">emoji_people</i></div>
+                                <div class="card-front"><i class="material-symbols-outlined">emoji_people</i></div>
                                 <div class="card-back"><span>Proactivity</span></div>
                             </div>
                         </li>
                     </ul>
-                </section>
-        
-            </div>
+            </section>
         </section>
 
         <section class="container">
-            <h2 class="section-title">Experience</h2>
-            <div class="section-content experience-content">
-                
-                <article class="timeline left-side">
-                    <span class="timeline-line timeline-left"></span>
-                    <ul class="timeline-list">
-                        <li class="timeline-item">
-                            <h3>Education</h3>
-                        </li>
-                        <li class="timeline-item">
-                            <h4>Degree in Web Applications Development</h4>
-                            <time>2023-2025</time>
-                            <p>Atlántida CIDEP</p>
-                        </li>
-                        <li class="timeline-item">
-                            <h4>Master in Secondary Education</h4>
-                            <time>2020-2021</time>
-                            <p>University of Almería</p>
-                        </li>
-                        <li class="timeline-item">
-                            <h4>Degree in Fine Arts (Mention in Animation & Design)</h4>
-                            <time>2014-2018</time>
-                            <p>University of Granada</p>
-                        </li>
-                    </ul>
-                </article>
-        
-                <article class="timeline right-side">
-                    <span class="timeline-line timeline-right"></span>
-                    <ul class="timeline-list">
-                        <li class="timeline-item">
-                            <h3>Work Experience</h3>
-                        </li>
-                        <li class="timeline-item">
-                            <h4>Art Teacher (Secondary Education) & Robotics Camp Monitor</h4>
-                            <time>2022-2023</time>
-                            <p>Ágora Granada College</p>
-                        </li>
-                    </ul>
-                </article>
-        
-            </div>
-        </section>
-
-        <section class="container">
-            
+            <h2 class="section-title">Projects</h2>
+            <section class="section-content projects-content">
+                <ul class="projects-list">
+                    <li class="project-card">
+                        <h4>Shito-Ryu Sport Club</h4>
+                        <img src="https://res.cloudinary.com/monday-blogs/w_768,h_384,c_fit/fl_lossy,f_auto,q_auto/wp-blog/2020/12/enterprise-img.jpeg">
+                        <p>Karate sport club web application developed in PHP and Javascript. Inludes various functionalities as users sessions, API and more. Currently in development</p>
+                        <a href="">Link</a>
+                    </li>
+                    <li class="project-card">
+                        <h4>Simon Says</h4>
+                        <img src="https://res.cloudinary.com/monday-blogs/w_768,h_384,c_fit/fl_lossy,f_auto,q_auto/wp-blog/2020/12/enterprise-img.jpeg">
+                        <p>Simon Says, the famous memory game, developed in HTML, CSS and JavaScript. Includes aditional game modes.</p>
+                        <a href="">Link</a>
+                    </li>
+                    <li class="project-card">
+                        <h4>Seats Selector</h4>
+                        <img src="https://res.cloudinary.com/monday-blogs/w_768,h_384,c_fit/fl_lossy,f_auto,q_auto/wp-blog/2020/12/enterprise-img.jpeg">
+                        <p>Cinema seats selector application developed in HTML, CSS and JavaScript</p>
+                        <a href="">Link</a>
+                    </li>
+                    <li class="project-card">
+                        <h4>Board Game Association</h4>
+                        <img src="https://res.cloudinary.com/monday-blogs/w_768,h_384,c_fit/fl_lossy,f_auto,q_auto/wp-blog/2020/12/enterprise-img.jpeg">
+                        <p>Static web page developed in HTML and CSS</p>
+                        <a href="">Link</a>
+                    </li>
+                </ul>
+            </section>
         </section>
 
         <section class="container">
