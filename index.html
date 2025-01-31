@@ -2,6 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="John Doe">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pablo Saavedra</title>
     <script defer src="app.js"></script>
@@ -16,14 +19,14 @@
     <header class="header">
         <nav class="navbar">
             <ul class="list-left">
-                <li>About Me</li>
-                <li>Experience</li>
-                <li>Skills</li>
+                <li data-lang="about">About Me</li>
+                <li data-lang="experience">Experience</li>
+                <li data-lang="skills">Skills</li>
             </ul>
             <ul class="list-right">
-                <li>Projects</li>
-                <li>Contact</li>
-                <li>EN | ES</li>
+                <li data-lang="projects">Projects</li>
+                <li data-lang="contact">Contact</li>
+                <li id="change-lang">EN | ES</li>
             </ul>
         </nav>
         <span class="load-bar"></span>
@@ -36,14 +39,14 @@
         </section>
 
         <section class="title-container container">
-            <h1 class="title-1">Hi, I'm Pablo Saavedra</h1>
-            <h1 class="title-2">Fullstack Web Dev& Art Teacher</h1>
+            <h1 class="title-1" data-lang="intro-1">Hi, I'm Pablo Saavedra</h1>
+            <h1 class="title-2" data-lang="intro-2">Fullstack Web Dev& Art Teacher</h1>
         </section>
 
         <section class="container">
-            <h2 class="section-title">About Me</h2>
+            <h2 class="section-title" data-lang="about">About Me</h2>
             <section class="section-content about-content">
-                <p class="section-maintext present-text">
+                <p class="section-maintext present-text" data-lang="self-description">
                     I'm Pablo Saavedra, former Art Teacher, Fullstack Web Developer with some 
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui consequatur voluptate provident modi
                     eius vel totam rerum nemo sapiente, dolorem itaque maiores ipsa autem reiciendis adipisci quos 
@@ -54,29 +57,29 @@
         </section>
 
         <section class="container">
-            <h2 class="section-title">Experience</h2>
+            <h2 class="section-title" data-lang="experience">Experience</h2>
             <section class="section-content experience-content">
                 
                 <article class="timeline left-side">
                     <span class="timeline-line timeline-left"></span>
                     <ul class="timeline-list">
                         <li class="timeline-item">
-                            <h3>Education</h3>
+                            <h3 data-lang="education-title">Education</h3>
                         </li>
                         <li class="timeline-item">
-                            <h4>Degree in Web Applications Development</h4>
-                            <time>2023-2025</time>
-                            <p>Atlántida CIDEP</p>
+                            <h4 data-lang="degree-web-app">Degree in Web Applications Development</h4>
+                            <time data-lang="time-2023-2025">2023-2025</time>
+                            <p data-lang="atlántida-cid">Atlántida CIDEP</p>
                         </li>
                         <li class="timeline-item">
-                            <h4>Master in Secondary Education</h4>
-                            <time>2020-2021</time>
-                            <p>University of Almería</p>
+                            <h4 data-lang="master-secondary-ed">Master in Secondary Education</h4>
+                            <time data-lang="time-2020-2021">2020-2021</time>
+                            <p data-lang="university-almeria">University of Almería</p>
                         </li>
                         <li class="timeline-item">
-                            <h4>Degree in Fine Arts (Mention in Animation & Design)</h4>
-                            <time>2014-2018</time>
-                            <p>University of Granada</p>
+                            <h4 data-lang="degree-fine-arts">Degree in Fine Arts (Mention in Animation & Design)</h4>
+                            <time data-lang="time-2014-2018">2014-2018</time>
+                            <p data-lang="university-granada">University of Granada</p>
                         </li>
                     </ul>
                 </article>
@@ -85,12 +88,12 @@
                     <span class="timeline-line timeline-right"></span>
                     <ul class="timeline-list">
                         <li class="timeline-item">
-                            <h3>Work Experience</h3>
+                            <h3 data-lang="work-experience-title">Work Experience</h3>
                         </li>
                         <li class="timeline-item">
-                            <h4>Art Teacher (Secondary Education) & Robotics Camp Monitor</h4>
-                            <time>2022-2023</time>
-                            <p>Ágora Granada College</p>
+                            <h4 data-lang="art-teacher">Art Teacher (Secondary Education) & Robotics Camp Monitor</h4>
+                            <time data-lang="time-2022-2023">2022-2023</time>
+                            <p data-lang="agora-granada">Ágora Granada College</p>
                         </li>
                     </ul>
                 </article>
@@ -99,7 +102,7 @@
         </section>
 
         <section class="container">
-            <h2 class="section-title">Skills</h2>
+            <h2 class="section-title" data-lang="skills">Skills</h2>
             <section class="section-content skills-content">
                     <ul class="skills-list">
                         <li class="skill-card">
@@ -165,13 +168,13 @@
                         <li class="skill-card">
                             <div class="card-inner">
                                 <div class="card-front"><i class="material-symbols-outlined">diversity_3</i></div>
-                                <div class="card-back"><span>Teamwork</span></div>
+                                <div class="card-back"><span data-lang="ability-1">Teamwork</span></div>
                             </div>
                         </li>
                         <li class="skill-card">
                             <div class="card-inner">
                                 <div class="card-front"><i class="material-symbols-outlined">emoji_people</i></div>
-                                <div class="card-back"><span>Proactivity</span></div>
+                                <div class="card-back"><span data-lang="ability-2">Proactivity</span></div>
                             </div>
                         </li>
                     </ul>
@@ -179,35 +182,35 @@
         </section>
 
         <section class="container">
-            <h2 class="section-title">Projects</h2>
+            <h2 class="section-title" data-lang="projects">Projects</h2>
             <section class="section-content projects-content">
                 <ul class="projects-list">
                     <li class="project-card">
                         <a href="" target="_blank">
-                            <h4>Shito-Ryu Sport Club</h4>
+                            <h4 data-lang="project-1-title">Shito-Ryu Sport Club</h4>
                             <img src="https://res.cloudinary.com/monday-blogs/w_768,h_384,c_fit/fl_lossy,f_auto,q_auto/wp-blog/2020/12/enterprise-img.jpeg">
-                            <p>Web application for a fictitious karate sport club developed in PHP and Javascript. Includes several functionalities such as user sessions, external and internal API implementation and more.</p>
+                            <p data-lang="project-1-description">Web application for a fictitious karate sport club developed in PHP and Javascript. Includes several functionalities such as user sessions, external and internal API implementation and more.</p>
                         </a>
                     </li>
                     <li class="project-card">
                         <a href="https://simondice.onrender.com" target="_blank">
-                            <h4>Simon Says</h4>
+                            <h4 data-lang="project-2-title">Simon Says</h4>
                             <img src="https://res.cloudinary.com/monday-blogs/w_768,h_384,c_fit/fl_lossy,f_auto,q_auto/wp-blog/2020/12/enterprise-img.jpeg">
-                            <p>Simon Says, the famous memory game, developed in HTML, CSS and JavaScript. Includes aditional game modes.</p>
+                            <p data-lang="project-2-description">Simon Says, the famous memory game, developed in HTML, CSS and JavaScript. Includes aditional game modes.</p>
                         </a>
                     </li>
                     <li class="project-card">
                         <a href="https://seats-selector.onrender.com" target="_blank">
-                            <h4>Seats Selector</h4>
+                            <h4 data-lang="project-3-title">Seats Selector</h4>
                             <img src="https://res.cloudinary.com/monday-blogs/w_768,h_384,c_fit/fl_lossy,f_auto,q_auto/wp-blog/2020/12/enterprise-img.jpeg">
-                            <p>Cinema seat selection application developed in HTML, CSS and JavaScript</p>
+                            <p data-lang="project-3-description">Cinema seat selection application developed in HTML, CSS and JavaScript</p>
                         </a>
                     </li>
                     <li class="project-card">
                         <a href="https://bga.onrender.com" target="_blank">
-                            <h4>Board Game Association</h4>
+                            <h4 data-lang="project-4-title">Board Game Association</h4>
                             <img src="https://res.cloudinary.com/monday-blogs/w_768,h_384,c_fit/fl_lossy,f_auto,q_auto/wp-blog/2020/12/enterprise-img.jpeg">
-                            <p>Static website for a fictitious board game club developed in HTML and CSS</p>
+                            <p data-lang="project-4-description">Static website for a fictitious board game club developed in HTML and CSS</p>
                         </a>
                     </li>
                 </ul>
@@ -215,7 +218,7 @@
         </section>
 
         <section class="container container-last">
-            <h2 class="section-title">Contact</h2>
+            <h2 class="section-title" data-lang="contact">Contact</h2>
             <section class="section-content contact-content">
                 
                 <ul class="contact-list">
@@ -229,11 +232,11 @@
                     </li>
                     <li class="contact-element cv">
                         <i class="material-symbols-outlined">contact_page</i>
-                        <p class="section-maintext contact-text">Download CV</p>
+                        <p class="section-maintext contact-text" data-lang="download-cv">Download CV</p>
                     </li>
                 </ul>
                 <section class="contact-details">
-                    <p class="section-maintext contact-text">Let's get in touch! You can contact me by email or phone, as well as download my complete CV.</p>
+                    <p class="section-maintext contact-text" data-lang="contact-description">Let's get in touch! You can contact me by email or phone, as well as download my complete CV.</p>
                 </section>
 
             </section>
@@ -242,7 +245,7 @@
     </main>
 
     <footer>
-        &copy; 2025 Pablo Saavedra. All Rights Reserved.
+        <p data-lang="footer-text">&copy;2025 Pablo Saavedra. All Rights Reserved.</p>
     </footer>
 </body>
 </html>

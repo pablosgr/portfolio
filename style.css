@@ -144,15 +144,11 @@ main{
 
 /*-main title-*/
 
-.present-text{
-    width: 60%;
-}
-
 .title-container{
     display: flex;
     flex-direction: column;
-    /* align-self: center;
-    width: 80%; */
+    align-self: center;
+    width: 80%;
     font-size: 5em;
     font-family: var(--titleFont);
 }
@@ -164,13 +160,15 @@ main{
 
 
 .title-1{
-    width: 70%;
+    width: 80%;
+    min-width: 950px;
     align-self: flex-start;
     margin-bottom: 20px;
 }
 
 .title-2{
-    width: 70%;
+    width: 80%;
+    min-width: 950px;
     align-self: flex-end;
     color: transparent; /* texto sin relleno */
     -webkit-text-stroke: 1.5px var(--lightBlack); /* borde del texto */
@@ -181,6 +179,10 @@ main{
 .about-content{
     justify-content: space-around;
     align-items: flex-start;
+}
+
+.present-text{
+    width: 60%;
 }
 
 /*-skills cards-*/
@@ -407,4 +409,69 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/*---------------------------------------------------------*/
+
+@media (width < 1415px){
+    main{
+        margin: 0 5% 0 5%;
+    }
+
+    .title-container{
+        min-width: 200px;
+        font-size: 4em;
+    }
+    .title-1, .title-2{
+        align-self: auto;
+        min-width: 763px;
+    }
+}
+
+@media (width <= 1220px){
+
+}
+
+@media (width < 1085px){
+
+    .section-title{
+        font-size: 3.8em;
+    }
+
+    .section-content {
+        display: flex;
+        flex-direction: column;
+        padding-top: 30px;
+    }
+    
+    .section-maintext{
+        font-size: 1.4em;
+    }
+    
+    .section-img {
+        width: 50px;
+        margin: 40px 0 0 0;
+    }
+
+    /**/
+
+    .title-container{
+        min-width: 200px;
+        font-size: 3.3em;
+    }
+    .title-1, .title-2{
+        align-self: auto;
+        min-width: 200px;
+    }
+
+    /**/
+
+    .about-content{
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .present-text{
+        min-width: 297px;
+    }
 }
