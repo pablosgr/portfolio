@@ -1,16 +1,11 @@
 "use strict";
 
-const boton_tlfn = document.querySelector(".phone");
-const boton_email = document.querySelector(".email");
-const boton_cv = document.querySelector(".cv");
-let info_tlfn = document.querySelector(".phone-info");
-let info_email = document.querySelector(".email-info");
-let info_cv = document.querySelector(".cv-info");
 let elements = document.querySelectorAll("[data-lang]");
-
 const boton_lang = document.getElementById("change-lang");
+//variables para el menú hamburguesa
+const menuBtn=document.getElementById("menu-btn");
+const navMenu=document.querySelectorAll('nav ul'); //dos uls
 let curr_lang = "en";
-
 const texts = {
     en: {
         "about": "About Me",
@@ -31,7 +26,7 @@ const texts = {
         "degree-fine-arts": "Degree in Fine Arts (Mention in Animation & Design)",
         "time-2014-2018": "2014-2018",
         "university-granada": "University of Granada",
-        "work-experience-title": "Work Experience",
+        "work-experience-title": "Work",
         "art-teacher": "Art Teacher (Secondary Education) & Robotics Camp Monitor",
         "time-2022-2023": "2022-2023",
         "agora-granada": "Agora Granada College",
@@ -71,7 +66,7 @@ const texts = {
         "work-experience-title": "Laboral",
         "art-teacher": "Profesor de Arte (Educación Secundaria) y Monitor en Campamento de Robótica",
         "time-2022-2023": "2022-2023",
-        "agora-granada": "ágora Granada College",
+        "agora-granada": "Ágora Granada College",
         "ability-1": "Trabajo en equipo",
         "ability-2": "Proactividad",
         "project-1-title": "Club Kárate Shito-Ryu",
@@ -87,6 +82,15 @@ const texts = {
         "footer-text": "&copy; 2025 Pablo Saavedra. Todos los derechos reservados."
     }
 };
+
+//evento para mostrar el menú escondido en resoluciones menores
+menuBtn.addEventListener("click", () => {
+    navMenu.forEach(
+        (i) => {
+            i.classList.toggle("active");
+        }
+    )
+});
 
 boton_lang.addEventListener("click", ()=>{
     changeLang();

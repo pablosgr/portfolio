@@ -80,6 +80,22 @@ main{
     font-family: var(--titleFont);
 }
 
+.list-right li, .list-left li{
+    cursor: pointer;
+    user-select: none;
+}
+
+.menu{
+    display: none;
+    font-size: 2.2em;
+    align-self: flex-start;
+    justify-self: flex-end;
+    margin-right: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
 /*----------PAGE BODY----------*/
 
 .container{
@@ -145,6 +161,7 @@ main{
 /*-main title-*/
 
 .title-container{
+    margin-top: 100px; /*por el alto del arrow-down*/
     display: flex;
     flex-direction: column;
     align-self: center;
@@ -238,7 +255,7 @@ main{
     font-family: var(--textFont);
     font-size: 1.5em;
     transform: rotateY(180deg);
-    
+    text-align: center;
 }
 
 /*-experience timelines-*/
@@ -428,11 +445,52 @@ footer{
     }
 }
 
-@media (width <= 1220px){
 
+@media (width <= 1220px){
+    .list-left, .list-right{
+        display: none;
+        flex-direction: column;
+        gap: 20px;
+        background-color: var(--lightBackground);
+        position: absolute;
+        right: 0;
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    .list-left{
+        top: 100px;
+    }
+
+    .list-right{
+        top: 330px;
+        border-bottom: 2px solid var(--lightBlack);
+    }
+
+    nav ul li {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .menu{
+        display: inline-block;
+    }
+
+    nav ul.active {
+        display: flex; /* Muestra el menú al activarlo */
+    }
 }
 
+
 @media (width < 1085px){
+
+    /**/
+
+    .container{
+        margin-bottom: 300px
+    }
+    
+    /**/
 
     .section-title{
         font-size: 3.8em;
@@ -457,8 +515,10 @@ footer{
 
     .title-container{
         min-width: 200px;
-        font-size: 3.3em;
+        font-size: 2.9em;
+        width: 90%;
     }
+
     .title-1, .title-2{
         align-self: auto;
         min-width: 200px;
@@ -474,4 +534,58 @@ footer{
     .present-text{
         min-width: 297px;
     }
+
+    /**/
+
+    .experience-content{
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 80px;
+    }
+
+    .timeline-line{
+        min-width: 3px;
+    }
+
+    .timeline-item h3{
+        font-size: .9em;
+    }
+
+    .timeline-left{
+        height: 680px;
+    }
+
+    .timeline-right{
+        height: 380px;
+    }
+
+    .timeline{
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        min-width: 289px;
+    }
+
+    /**/
+    
+    .contact-text{
+        text-align: center;
+        /* text-align: justify; */
+    }
+    
+    .contact-list{
+        height: auto;
+        padding-bottom: 50px;
+    }
+    
+    .contact-element{
+        flex-direction: column;
+    }
+    
+    /**/
+
+   footer p{
+    font-size: .93em;
+   }
+
 }
