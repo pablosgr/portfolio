@@ -2,8 +2,7 @@
 
 let elements = document.querySelectorAll("[data-lang]");
 const boton_lang = document.getElementById("change-lang");
-//variables para el menú hamburguesa
-const menuBtn=document.getElementById("menu-btn");
+const menuBtn=document.getElementById("menu-btn"); //variables para el menú hamburguesa
 const navMenu=document.querySelectorAll('nav ul'); //dos uls
 let curr_lang = "en";
 const texts = {
@@ -15,7 +14,7 @@ const texts = {
         "contact": "Contact",
         "intro-1": "Hi, I'm Pablo Saavedra",
         "intro-2": "Fullstack Web Dev & Art Teacher",
-        "self-description": "I'm Pablo Saavedra, former Art Teacher, Fullstack Web Developer with some Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui consequatur voluptate provident modi eius vel totam rerum nemo sapiente, dolorem itaque maiores ipsa autem reiciendis adipisci quos veniam vitae quisquam!",
+        "self-description": "I'm passionate about <strong>art and technology</strong>, always looking for new forms of expression and creation. My background in visual arts, design and my teaching experience have allowed me to understand the creative process from different perspectives, while my foray into web development and 3D has opened up a world of possibilities to <strong>merge the artistic with the digital</strong>. I enjoy exploring the intersection between these fields, combining traditional techniques with innovative tools to bring unique and functional projects to life.",
         "education-title": "Education",
         "degree-web-app": "Degree in Web Applications Development",
         "time-2023-2025": "2023-2025",
@@ -52,7 +51,7 @@ const texts = {
         "contact": "Contacto",
         "intro-1": "Hola, soy Pablo Saavedra",
         "intro-2": "Desarrollador Fullstack & Profesor de Arte",
-        "self-description": "Soy Pablo Saavedra, ex profesor de arte, desarrollador Fullstack con algo de Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui consequatur voluptate provident modi eius vel totam rerum nemo sapiente, dolorem itaque maiores ipsa autem reiciendis adipisci quos veniam vitae quisquam!",
+        "self-description": "Soy un apasionado del <strong>arte y la tecnología</strong>, siempre en búsqueda de nuevas formas de expresión y creación. Mi formación en artes visuales, diseño y mi experiencia docente me han permitido comprender el proceso creativo desde diferentes perspectivas, mientras que mi incursión en el desarrollo web y el 3D me ha abierto un mundo de posibilidades para <strong>fusionar lo artístico con lo digital</strong>. Disfruto explorando la intersección entre estos campos, combinando técnicas tradicionales con herramientas innovadoras para dar vida a proyectos únicos y funcionales.",
         "education-title": "Educación",
         "degree-web-app": "Grado Superior en Desarrollo de Aplicaciones Web",
         "time-2023-2025": "2023-2025",

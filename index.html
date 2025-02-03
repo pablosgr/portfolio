@@ -19,13 +19,13 @@
     <header class="header">
         <nav class="navbar">
             <ul class="list-left">
-                <li data-lang="about">About Me</li>
-                <li data-lang="experience">Experience</li>
-                <li data-lang="skills">Skills</li>
+                <li><a data-lang="about" href="#">About Me</a></li>
+                <li><a data-lang="experience" href="#experience">Experience</a></li>
+                <li><a data-lang="skills" href="#skills">Skills</a></li>
             </ul>
             <ul class="list-right">
-                <li data-lang="projects">Projects</li>
-                <li data-lang="contact">Contact</li>
+                <li><a data-lang="projects" href="#projects">Projects</a></li>
+                <li><a data-lang="contact" href="#contact">Contact</a></li>
                 <li id="change-lang">EN | ES</li>
             </ul>
         </nav>
@@ -48,17 +48,14 @@
             <h2 class="section-title" data-lang="about">About Me</h2>
             <section class="section-content about-content">
                 <p class="section-maintext present-text" data-lang="self-description">
-                    I'm Pablo Saavedra, former Art Teacher, Fullstack Web Developer with some 
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui consequatur voluptate provident modi
-                    eius vel totam rerum nemo sapiente, dolorem itaque maiores ipsa autem reiciendis adipisci quos 
-                    veniam vitae quisquam!
+                    I'm passionate about <strong>art and technology</strong>, always looking for new forms of expression and creation. My background in visual arts, design and my teaching experience have allowed me to understand the creative process from different perspectives, while my foray into web development and 3D has opened up a world of possibilities to <strong>merge the artistic with the digital</strong>. I enjoy exploring the intersection between these fields, combining traditional techniques with innovative tools to bring unique and functional projects to life.
                 </p>
                 <img src="./pics/perfil_2.jpg" alt="imagen personal" class="section-img">
             </section>
         </section>
 
         <section class="container">
-            <h2 class="section-title" data-lang="experience">Experience</h2>
+            <h2 class="section-title" data-lang="experience" id="experience">Experience</h2>
             <section class="section-content experience-content">
                 
                 <article class="timeline left-side">
@@ -103,7 +100,7 @@
         </section>
 
         <section class="container">
-            <h2 class="section-title" data-lang="skills">Skills</h2>
+            <h2 class="section-title" data-lang="skills" id="skills">Skills</h2>
             <section class="section-content skills-content">
                     <ul class="skills-list">
                         <li class="skill-card">
@@ -183,7 +180,7 @@
         </section>
 
         <section class="container">
-            <h2 class="section-title" data-lang="projects">Projects</h2>
+            <h2 class="section-title" data-lang="projects" id="projects">Projects</h2>
             <section class="section-content projects-content">
                 <ul class="projects-list">
                     <li class="project-card">
@@ -219,7 +216,7 @@
         </section>
 
         <section class="container container-last">
-            <h2 class="section-title" data-lang="contact">Contact</h2>
+            <h2 class="section-title" data-lang="contact" id="contact">Contact</h2>
             <section class="section-content contact-content">
                 
                 <ul class="contact-list">
@@ -233,7 +230,7 @@
                     </li>
                     <li class="contact-element cv">
                         <i class="material-symbols-outlined">contact_page</i>
-                        <p class="section-maintext contact-text" data-lang="download-cv">Download CV</p>
+                        <p class="section-maintext contact-text" data-lang="download-cv"><a href="./files/cv_25.pdf" download class="cv">Download CV</a></p>
                     </li>
                 </ul>
                 <section class="contact-details">

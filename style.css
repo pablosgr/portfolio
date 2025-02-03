@@ -85,6 +85,15 @@ main{
     user-select: none;
 }
 
+.list-right li a, .list-left li a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.list-right li a:visited, .list-left li a:visited{
+    color: inherit;
+}
+
 .menu{
     display: none;
     font-size: 2.2em;
@@ -218,6 +227,7 @@ main{
     width: 170px;
     height: 170px;
     perspective: 1000px; /* Profundidad para efecto 3D */
+    cursor: pointer;
 }
 
 .card-inner{
@@ -256,6 +266,7 @@ main{
     font-size: 1.5em;
     transform: rotateY(180deg);
     text-align: center;
+    user-select: none;
 }
 
 /*-experience timelines-*/
@@ -401,6 +412,11 @@ main{
     padding: 50px 50px 0px 50px;
 }
 
+.cv{
+    text-decoration: none;
+    color: inherit;
+}
+
 /* .contact-info{
     position: absolute;
     transition: 1s ease;
@@ -434,6 +450,19 @@ footer{
     .contact-list{
         flex-direction: column;
         padding-bottom: 50px;
+    }
+}
+
+@media (width < 1640px){
+    .about-content{
+        flex-direction: column;
+        gap: 120px;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+    
+    .present-text{
+        width: 100%;
     }
 }
 
@@ -536,6 +565,7 @@ footer{
 
     .about-content{
         justify-content: space-around;
+        gap: 40px;
         align-items: center;
     }
 
@@ -584,6 +614,7 @@ footer{
     .contact-list{
         height: auto;
         flex-direction: column;
+        padding-left: 15px;
     }
     
     .contact-element{
