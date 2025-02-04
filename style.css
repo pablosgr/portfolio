@@ -264,9 +264,58 @@ main{
 .card-back{
     font-family: var(--textFont);
     font-size: 1.5em;
+    font-weight: 600;
     transform: rotateY(180deg);
     text-align: center;
     user-select: none;
+}
+
+.html5{
+    background-color: rgb(235, 171, 87);
+}
+
+.css3{
+    background-color: rgb(91, 156, 241);
+}
+
+.javascript{
+    background-color: rgb(196, 235, 87);
+}
+
+.php{
+    background-color: rgb(92, 175, 230);
+}
+
+.java{
+    background-color: rgb(240, 115, 93);
+}
+
+.json{
+    background-color: rgb(150, 150, 150);
+}
+
+.mysql{
+    background-color: rgb(150, 159, 243);
+}
+
+.illustrator{
+    background-color: rgb(233, 163, 72);
+}
+
+.photoshop{
+    background-color: rgb(125, 147, 245);
+}
+
+.premierepro{
+    background-color: rgb(212, 137, 231);
+}
+
+.teamwork{
+    background-color: rgb(236, 140, 188);
+}
+
+.proactivity{
+    background-color: rgb(99, 226, 94);
 }
 
 /*-experience timelines-*/
