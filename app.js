@@ -39,8 +39,8 @@ const texts = {
         "project-3-description": "Cinema seat selection application developed in HTML, CSS and JavaScript",
         "project-4-title": "Board Game Association",
         "project-4-description": "Static website for a fictitious board game club developed in HTML and CSS",
-        "download-cv": "Download CV",
-        "contact-description": "Let's get in touch! You can contact me by email or phone, as well as download my complete CV.",
+        "download-cv": "Read CV",
+        "contact-description": "Let's get in touch! You can contact me by email or phone, as well as read or download my complete CV.",
         "footer-text": "&copy; 2025 Pablo Saavedra. All Rights Reserved."
     },
     es: {
@@ -76,8 +76,8 @@ const texts = {
         "project-3-description": "Aplicación de selección de asientos de cine desarrollada en HTML, CSS y JavaScript",
         "project-4-title": "Board Game Association",
         "project-4-description": "Sitio web estático para un club ficticio de juegos de mesa desarrollado en HTML y CSS",
-        "download-cv": "Descargar CV",
-        "contact-description": "¡Hablemos! Puedes contactarme por correo electrónico o teléfono, así como descargar mi CV completo.",
+        "download-cv": "Leer CV",
+        "contact-description": "¡Hablemos! Puedes contactarme por correo electrónico o teléfono, así como leer o descargar mi CV completo.",
         "footer-text": "&copy; 2025 Pablo Saavedra. Todos los derechos reservados."
     }
 };
@@ -96,7 +96,11 @@ boton_lang.addEventListener("click", ()=>{
     elements.forEach(
         (e) => {
             let key = e.getAttribute("data-lang");
-            e.innerHTML = texts[curr_lang][key];
+            if(key === "download-cv") {
+                e.innerHTML = `<a href="./files/cv_25.pdf" class="cv" target="_blank">${texts[curr_lang][key]}</a>`;
+            } else {
+                e.innerHTML = texts[curr_lang][key];
+            }
         }
     )
 })
